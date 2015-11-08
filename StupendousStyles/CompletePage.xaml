@@ -23,6 +23,10 @@
 
         <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\color-logo.png"/>
 
-
+        <Image Grid.Row="1" Source="Assets\ticket.jpg" />
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="36" Text="Order" HorizontalAlignment="Center"/>
+            <TextBlock FontSize="48" Text="96" HorizontalAlignment="Center"/>
+        </StackPanel> 
     </Grid>
 </Page>
