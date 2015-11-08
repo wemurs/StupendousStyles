@@ -18,11 +18,49 @@
     <Grid Background="{ThemeResource CoffeeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\white-logo.png"/>
 
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,30">
+            <Button x:Name="RoastButton" Style="{StaticResource CoffeeButtonStyle}" Content="Roast">
+                <Button.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="None" Click="RoastClick"/>
+                        <MenuFlyoutItem Text="Dark" Click="RoastClick"/>
+                        <MenuFlyoutItem Text="Medium" Click="RoastClick"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+            <Button x:Name="SweetenerButton" Style="{StaticResource CoffeeButtonStyle}" Content="Sweetener">
+                <Button.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="None" Click="SweetenerClick"/>
+                        <MenuFlyoutItem Text="Sugar" Click="SweetenerClick"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+            <Button x:Name="CreamButton" Style="{StaticResource CoffeeButtonStyle}" Content="Cream">
+                <Button.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="None" Click="CreamClick"/>
+                        <MenuFlyoutItem Text="2% Milk" Click="CreamClick"/>
+                        <MenuFlyoutItem Text="Whole Milk" Click="CreamClick"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+        </StackPanel>
 
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Style="{StaticResource ButtonTextStyle}" Text="Coffee:" Margin="20,0,0,20"/>
+            <TextBlock Grid.Column="1" x:Name="CoffeeDisplayTextBlock" Style="{StaticResource ButtonTextStyle}"/>
+        </Grid>
     </Grid>
 </Page>
