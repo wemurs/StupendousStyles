@@ -16,6 +16,13 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource CoffeeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\white-logo.png"/>
+
 
     </Grid>
 </Page>

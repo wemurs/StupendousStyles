@@ -29,25 +29,25 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Style="{StaticResource MainButtonStyle}">
+            <Button x:Name="DonutButton" Grid.Column="0" Style="{StaticResource MainButtonStyle}" Click="DonutClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Style="{StaticResource ButtonImageStyle}" Source="Assets\donut-icon.png"/>
                     <TextBlock Style="{StaticResource SpacedButtonTextStyle}" Text="Donuts"/>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="1" Style="{StaticResource MainButtonStyle}">
+            <Button x:Name="CoffeeButton" Grid.Column="1" Style="{StaticResource MainButtonStyle}" Click="CoffeeClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Style="{StaticResource ButtonImageStyle}" Source="Assets\coffee-icon.png"/>
                     <TextBlock Style="{StaticResource SpacedButtonTextStyle}" Text="Coffee"/>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="2" Style="{StaticResource MainButtonStyle}">
+            <Button x:Name="ScheduleButton" Grid.Column="2" Style="{StaticResource MainButtonStyle}" Click="ScheduleClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Style="{StaticResource ButtonImageStyle}" Source="Assets\schedule-icon.png"/>
                     <TextBlock Style="{StaticResource SpacedButtonTextStyle}" Text="Schedule"/>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="3" Style="{StaticResource MainButtonStyle}">
+            <Button x:Name="CompleteButton" Grid.Column="3" Style="{StaticResource MainButtonStyle}" Click="CompleteClick">
                 <StackPanel Orientation="Horizontal">
                     <Image Style="{StaticResource ButtonImageStyle}" Source="Assets\complete-icon.png"/>
                     <TextBlock Style="{StaticResource SpacedButtonTextStyle}" Text="Complete"/>

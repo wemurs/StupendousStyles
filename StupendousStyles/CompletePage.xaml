@@ -16,6 +16,13 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource CompleteBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\color-logo.png"/>
+
 
     </Grid>
 </Page>
