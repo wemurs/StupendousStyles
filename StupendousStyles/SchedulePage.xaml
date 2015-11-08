@@ -21,8 +21,20 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\white-logo.png"/>
+        <Image HorizontalAlignment="Left" Grid.Row="0" Source="Assets\white-logo.png" />
 
+        <Grid Margin="0,20,0,0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Style="{StaticResource ButtonTextStyle}" Text="Pickup:" HorizontalAlignment="Center"/>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <CalendarDatePicker PlaceholderText="select a date"/>
+                <TimePicker Margin="0,20,0,0" ClockIdentifier="12HourClock" Foreground="White"/>
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Page>
